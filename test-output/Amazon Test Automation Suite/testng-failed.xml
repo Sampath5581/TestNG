@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Amazon Test Automation Suite]" parallel="tests">
+  <test thread-count="5" name="Amazon_Test(failed)" parallel="tests">
+    <parameter name="password" value="Scorpio1234"/>
+    <parameter name="url" value="https://www.amazon.com/"/>
+    <parameter name="Browser" value="IE"/>
+    <parameter name="username" value="sampathgoud85@gmail.com"/>
+    <classes>
+      <class name="com.parameters.ParameterTest">
+        <methods>
+          <include name="AmazonTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.parameters.ParameterTest -->
+    </classes>
+  </test> <!-- Amazon_Test(failed) -->
+</suite> <!-- Failed suite [Amazon Test Automation Suite] -->

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon Test Automation Suite" parallel="tests">
+  <test	name="Amazon_Test">
+  <parameter name="Browser" value="IE"/>
+  <parameter name="url" value="https://www.amazon.com/"/>
+  <parameter name="username" value="sampathgoud85@gmail.com"/>
+  <parameter name="password" value="Scorpio1234"/>
+    <classes>
+      <class name="com.parameters.ParameterTest"/>
+     </classes>
+  </test>
+<test name="Amazon_Test1">
+  <parameter name="Browser" value="chrome"/>
+  <parameter name="url" value="https://www.amazon.com/"/>
+  <parameter name="username" value="sampathgoud85@gmail.com"/>
+  <parameter name="password" value="Scorpio1234"/>
+    <classes>
+      <class name="com.parameters.ParameterTest"/>
+     </classes>
+  </test>
+<test name="Amazon_Test2">
+   <parameter name="Browser" value="firefox"/>
+  <parameter name="url" value="https://www.amazon.com/"/>
+  <parameter name="username" value="sampathgoud85@gmail.com"/>
+  <parameter name="password" value="Scorpio1234"/>
+    <classes>
+      <class name="com.parameters.ParameterTest"/>
+     </classes>
+  </test>
+</suite>
